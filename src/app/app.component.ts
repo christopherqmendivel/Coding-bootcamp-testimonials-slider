@@ -8,7 +8,7 @@ import { Testimonial } from './shared/interface/Testimonial';
 })
 export class AppComponent {
 
-  listTestimonials: Testimonial[] = [
+  public listTestimonials: Testimonial[] = [
     {
       imageUrl: '/assets/img/user/image-tanya.jpg',
       testimonial:
@@ -24,4 +24,5 @@ export class AppComponent {
       skill: 'Junior Front-end Developer',
     },
   ];
+
 }

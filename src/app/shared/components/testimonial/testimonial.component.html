@@ -1,4 +1,8 @@
-<figure class="testimonial row">
+<figure
+     class="testimonial row"
+     [ngClass]="animate ? 'animate__animated animate__fadeIn' : ''" (animationend)="resetAnimation()"
+
+    >
   <div class="col-12 mx-auto my-5">
     <div class="bg">
         <img

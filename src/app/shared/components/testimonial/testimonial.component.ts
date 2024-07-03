@@ -11,18 +11,28 @@ export class TestimonialComponent {
   @Input()
   public testimonial: Testimonial[] = [];
   public testimonialActualIndex: number = 0;
+  public animate = true;
+
 
   prevTestimonial():void {
     if(this.testimonialActualIndex > 0) {
       this.testimonialActualIndex--;
-      console.log(this.testimonialActualIndex)
+      this.triggerAnimation();
     }
   }
 
   nextTestimonial():void {
     if(this.testimonialActualIndex < this.testimonial.length - 1) {
       this.testimonialActualIndex++;
-      console.log(this.testimonialActualIndex)
+      this.triggerAnimation();
     }
+  }
+
+  triggerAnimation() {
+    this.animate = true;
+  }
+
+  resetAnimation() {
+    this.animate = false;
   }
 }
