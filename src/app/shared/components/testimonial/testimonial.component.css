@@ -1,0 +1,82 @@
+.bg {
+  position: relative;
+  padding: 0.6rem;
+}
+
+/*
+.bg:after {
+    content: '';
+    background-image: url('/assets/img/icons/pattern-bg.svg');
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    top: -2rem;
+}*/
+
+.img-user {
+  z-index: 1;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.blockquote-testimonial {
+  padding: 0 0.5rem;
+  margin-top: 5rem;
+  position: relative;
+  max-width: 21rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blockquote-testimonial:after {
+  content: "";
+  background-image: url("/assets/img/icons/pattern-quotes.svg");
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15%;
+  height: 100%;
+  margin: 0 auto;
+  top: -1.2rem;
+}
+
+.figcap {
+    display: grid;
+    place-items: center;
+}
+
+.figcap .name{
+    color: var(--dark-blue);
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.figcap .skill {
+    color: var(--gray-blue);
+    font-size: .9em;
+}
+
+
+.buttons {
+  background: var(--white);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    bottom: -.5rem;
+    padding: .3rem .6rem;
+    gap: 2rem;
+    box-shadow: 0 0 .6rem rgba(0, 0, 0, 0.4);
+
+}
+
+.btn-left, .btn-right {
+  cursor: pointer;
+}
