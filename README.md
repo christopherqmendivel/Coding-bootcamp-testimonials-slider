@@ -1,3 +1,12 @@
+# Design
+
+## Desktop
+![DDesktop Image](assets/img/design/desktop-design-slide-1.jpg)
+
+## Mobile
+![Mobile Image](assets/img/design/mobile-design-slide-1.jpg)
+
+
 # CodingBootcampTestimonials
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.
