@@ -1,10 +1,10 @@
 # Design
 
 ## Desktop
-![DDesktop Image](assets/img/design/desktop-design-slide-1.jpg)
+![DDesktop Image](/assets/img/design/desktop-design-slide-1.jpg)
 
 ## Mobile
-![Mobile Image](assets/img/design/mobile-design-slide-1.jpg)
+![Mobile Image](src/assets/img/design/mobile-design-slide-1.jpg)
 
 
 # CodingBootcampTestimonials
