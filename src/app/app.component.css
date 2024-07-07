@@ -1,0 +1,23 @@
+.container  {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6.5rem;
+  }
+  
+}
+
+@media (min-width: 1500px) {
+  .container {
+    margin-left: auto;
+  }
+} 
+

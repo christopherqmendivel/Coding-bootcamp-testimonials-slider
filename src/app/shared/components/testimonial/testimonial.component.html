@@ -1,38 +1,46 @@
 <figure
-     class="testimonial row"
-     [ngClass]="animate ? 'animate__animated animate__fadeIn' : ''" (animationend)="resetAnimation()"
-
-    >
-  <div class="col-12 mx-auto my-5">
-    <div class="bg">
-        <img
+  class="testimonial row"
+  [ngClass]="animate ? 'animate__animated animate__fadeIn' : ''"
+  (animationend)="resetAnimation()"
+>
+  <div class="col-12 mx-auto c-1">
+    <div class="row r-2">
+      <div class="col col-sm-10 col-md-7 col-lg-6 c-image">
+        <div class="bg">
+          <img
             [src]="testimonial[testimonialActualIndex].imageUrl"
             [alt]="testimonial[testimonialActualIndex].name"
             class="img-fluid position-relative img-user"
-        >
+          />
 
-        <!-- BUTTONS -->
-        <div class="buttons rounded-pill">
+          <!-- BUTTONS -->
+          <div class="buttons rounded-pill">
             <span class="btn-left" (click)="prevTestimonial()">
-                <img 
-                    src="/assets/img/icons/icon-prev.svg"
-                    alt="Button Left">
+              <img src="/assets/img/icons/icon-prev.svg" alt="Button Left" />
             </span>
             <span class="btn-left" (click)="nextTestimonial()">
-                <img 
-                    src="/assets/img/icons/icon-next.svg"
-                    alt="Button Right">
+              <img src="/assets/img/icons/icon-next.svg" alt="Button Right" />
             </span>
+          </div>
         </div>
+      </div>
+
+      <div class="col col-sm-7 col-lg-6 d-flex p-0 c-info">
+        <div class="info ">
+          <blockquote class="blockquote-testimonial text-center">
+            {{ testimonial[testimonialActualIndex].testimonial }}
+          </blockquote>
+
+          <figcaption class="figcap">
+            <p class="name m-0">
+              {{ testimonial[testimonialActualIndex].name }}
+            </p>
+            <p class="skill m-0">
+              {{ testimonial[testimonialActualIndex].skill }}
+            </p>
+          </figcaption>
+        </div>
+      </div>
     </div>
-    
-    <blockquote class="blockquote-testimonial text-center">
-        {{ testimonial[testimonialActualIndex].testimonial}}
-    </blockquote>
-    
-    <figcaption class="figcap">
-        <p class="name m-0">{{ testimonial[testimonialActualIndex].name }}</p>
-        <p class="skill m-0">{{ testimonial[testimonialActualIndex].skill }}</p>
-    </figcaption>
   </div>
 </figure>
